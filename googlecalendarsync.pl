@@ -98,7 +98,6 @@ for (&getEvents()) {
 	$event->add_properties(
 		'summary' => $_->title,
 		'description' => $_->content->body,
-		# ;CN=jeanne.solsberry@yum.com:mailto:jeanne.solsberry@yum.com
 		'organizer' => 'CN=' . $_->author->name . ':mailto:' . $_->author->email,
 		'location' => $_->location,
 		'transp' => $_->transparency,
