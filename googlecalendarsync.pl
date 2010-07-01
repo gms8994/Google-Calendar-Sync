@@ -62,7 +62,7 @@ for (&getEvents()) {
 	
 	# find out if this entry already exists in $ics
 	if ($success && $t_success) {
-		print sprintf("\t\tNot adding %s, it already exists and is the same age\n", $_->title);
+		print sprintf("\t\tNot adding %s, it already exists and is the same age\n", $_->title) if $debug;
 		next;
 	}
 	
